@@ -5,8 +5,8 @@ plugins {
 }
 
 // Group and version are usually provided by Jitpack as properties
-group = project.findProperty("group") ?: "com.github.AndroidDeveloperLB"
-version = project.findProperty("version") ?: "1.0.0"
+group = project.findProperty("group")?.toString()?.takeIf { it.isNotEmpty() } ?: "com.github.AndroidDeveloperLB"
+version = project.findProperty("version")?.toString()?.takeIf { it.isNotEmpty() && it != "unspecified" } ?: "1.0.0"
 
 gradlePlugin {
     plugins {
