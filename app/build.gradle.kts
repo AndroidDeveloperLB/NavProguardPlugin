@@ -1,44 +1,8 @@
 plugins {
     id("com.android.application")
-    // This plugin is included via includeBuild in settings.gradle.kts
     id("com.lb.navplugin.NavProguardPlugin")
 }
 
-/**
- * How to use this plugin in your own project via Jitpack:
- *
- * 1. Add the Jitpack repository to your root `settings.gradle.kts` or `build.gradle.kts`
- *    (in the `pluginManagement` block or `buildscript` block):
- *
- *    pluginManagement {
- *        repositories {
- *            google()
- *            mavenCentral()
- *            gradlePluginPortal()
- *            maven { url = uri("https://jitpack.io") }
- *        }
- *    }
- *
- * 2. Add the plugin as a dependency in your root `build.gradle.kts`:
- *
- *    buildscript {
- *        repositories {
- *            google()
- *            mavenCentral()
- *            maven { url = uri("https://jitpack.io") }
- *        }
- *        dependencies {
- *            // Replace 'USER' with your GitHub username and 'VERSION' with the tag/commit.
- *            classpath("com.github.USER:NavProguardPlugin:nav-plugin:VERSION")
- *        }
- *    }
- *
- * 3. Apply the plugin in your app's `build.gradle.kts`:
- *
- *    plugins {
- *        id("com.lb.navplugin.NavProguardPlugin")
- *    }
- */
 android {
     namespace = "com.lb.myapplication"
     compileSdk = 37
