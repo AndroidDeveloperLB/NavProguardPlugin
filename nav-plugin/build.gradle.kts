@@ -4,8 +4,9 @@ plugins {
     `maven-publish`
 }
 
-group = "com.github.username"
-version = "1.0.0"
+// Group and version are usually provided by Jitpack as properties
+group = project.findProperty("group") ?: "com.github.AndroidDeveloperLB"
+version = project.findProperty("version") ?: "1.0.0"
 
 gradlePlugin {
     plugins {
@@ -26,8 +27,8 @@ publishing {
     publications {
         register<MavenPublication>("maven") {
             from(components["java"])
-            groupId = group.toString()
             artifactId = "nav-plugin"
+            groupId = group.toString()
             version = version.toString()
         }
     }

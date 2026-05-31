@@ -28,9 +28,8 @@ plugins {
  *            maven { url = uri("https://jitpack.io") }
  *        }
  *        dependencies {
- *            // Replace 'USERNAME' with your GitHub username and 'TAG' with the version/tag.
- *            // Note: Jitpack coordinates are usually com.github.User:Repo:Tag
- *            classpath("com.github.username:NavProguardPlugin:1.0.0")
+ *            // Replace 'USER' with your GitHub username and 'VERSION' with the tag/commit.
+ *            classpath("com.github.USER:NavProguardPlugin:nav-plugin:VERSION")
  *        }
  *    }
  *
@@ -39,10 +38,6 @@ plugins {
  *    plugins {
  *        id("com.lb.navplugin.NavProguardPlugin")
  *    }
- *
- *    OR using the legacy way:
- *
- *    apply(plugin = "com.lb.navplugin.NavProguardPlugin")
  */
 android {
     namespace = "com.lb.myapplication"
