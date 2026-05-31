@@ -8,14 +8,6 @@ In dependencies, add according to the Jitpack page:
 
 https://jitpack.io/#AndroidDeveloperLB/NavProguardPlugin
 
-Meaning:
-
-    implementation("com.github.AndroidDeveloperLB:NavProguardPlugin:")
-
-In "plugins" section of the project, add:
-
-    id("com.lb.navplugin.NavProguardPlugin") apply false
-
 In "plugins" section of the app's module, add:
 
     id("com.lb.navplugin.NavProguardPlugin")
